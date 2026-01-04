@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
 		printf("%s wasn't a valid NXA file\n", argv[1]);
 		goto failStreamfile;
 	}
-	FILE *outFile = fopen(argv[2], "w");
+	FILE *outFile = fopen(argv[2], "wb");
 	if (!outFile) {
 		printf("Couldn't open %s for writing\n", argv[2]);
 		goto failOpusStreamfile;
